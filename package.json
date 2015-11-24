@@ -1,0 +1,16 @@
+{
+  "name": "react-typescript-webpack",
+  "version": "1.0.0",
+  "description": "React/Typescript/Webpack test project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base public/"
+  },
+  "author": "Pavel Dymkov",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1",
+    "webpack-typescript": "^0.5.6"
+  }
+}

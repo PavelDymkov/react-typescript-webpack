@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "jsx": "react",
+        "removeComments": true,
+        "sourceMap": true
+    }
+}

@@ -1,0 +1,57 @@
+html, body, #content {
+	margin: 0;
+	height: 100%;
+}
+
+.application {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+.user-data {
+	height: 100%;
+	margin: 36px 24px;
+}
+
+.user-data_title {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation_cards {
+	display: flex;
+	justify-content: center;
+}
+
+.navigation_controls {
+	display: flex;
+	justify-content: center;
+	margin: 12px 0;
+}
+
+.user-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80px;
+	height: 120px;
+	border: 1px lightgray solid;
+	text-align: center;
+	cursor: pointer;
+}
+
+.user-card.selected {
+	border-width: 2px;
+	border-color: gray;
+}
+
+.button {
+	margin: 0 12px;
+	cursor: pointer;
+}
