@@ -1,14 +1,10 @@
 export function urlApi(callback: Function) {
-	passId();
-	
 	window.addEventListener("popstate", event => passId());
 	
 	function passId() {
-		console.log(history.state)
 		var match = location.search.match(/id=(\d+)/);
+		var id: number = match ? +match[1] : -1;
 		
-		if (match) {
-			callback(+match[1]);
-		}
+		callback(id);
 	}
 };

@@ -71,7 +71,10 @@ class Store {
 				break;
 			
 			case ActionTypes.SELECT_USER_BY_HISTORY:
-				this.selectUser(message.data, false);
+				var id: number =
+					message.data == -1 ? this.defaultUserId : message.data;
+				 
+				this.selectUser(id, false);
 				break;
 		
 			default: return;
